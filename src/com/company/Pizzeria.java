@@ -1,8 +1,8 @@
 package com.company;
 
-public class Pizzaria {
+public class Pizzeria {
 
-    public Pizzaria(){
+    public Pizzeria(){
         MenuKort menuKort = new MenuKort();
 
     }

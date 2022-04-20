@@ -6,7 +6,7 @@ public class Main {
 	// write your code here
         System.out.println("Velkommen til Marios Pizzarbar!");
 
-        Pizzaria pizzaria = new Pizzaria();
-        pizzaria.controller();
+        Pizzeria pizzeria = new Pizzeria();
+        pizzeria.controller();
     }
 }
