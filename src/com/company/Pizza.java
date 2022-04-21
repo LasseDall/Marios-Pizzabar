@@ -4,9 +4,9 @@ public class Pizza {
     private int nummer;
     private String name;
     private String description;
-    private int pris;
+    private double pris;
 
-    public Pizza(int nummer, String name, String description, int pris){
+    public Pizza(int nummer, String name, String description, double pris){
         this.nummer=nummer;
         this.name=name;
         this.description=description;
