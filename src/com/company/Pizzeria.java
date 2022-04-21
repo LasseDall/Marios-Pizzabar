@@ -7,16 +7,11 @@ public class Pizzeria {
     private BestillingsListe bestillingsListe;
 
     public Pizzeria(){
-        menuKort = new MenuKort();
         bestillingsListe=new BestillingsListe();
 
     }
 
     public void controller() {
-        Pizza pizza1 = new Pizza(1, "Margeritha", "tomat,ost", 65);
-        Pizza pizza2 = new Pizza(2, "Pepperoni", "tomat,ost,pepperoni", 70);
-        menuKort.tilføj(pizza1);
-        menuKort.tilføj(pizza2);
         lavBestilling(1,0015);
         //menuKort.visMenu();
     }
@@ -26,7 +21,7 @@ public class Pizzeria {
         Bestilling bestilling = new Bestilling(afhentning);
         while (antalPizzaer>0){
             System.out.println("pizza nummer");
-            String pizzaNummer = keyboard.nextLine();
+            int pizzaNummer = keyboard.nextInt();
             Pizza tmp = menuKort.findPizza(pizzaNummer);
             bestilling.tilføj(tmp);
             antalPizzaer--;

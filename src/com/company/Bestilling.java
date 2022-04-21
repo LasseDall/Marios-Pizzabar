@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Bestilling {
+public class  Bestilling {
     private ArrayList<Pizza> bestilling;
     private int afhentning;
     private double pris;

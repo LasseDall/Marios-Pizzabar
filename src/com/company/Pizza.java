@@ -21,4 +21,8 @@ public class Pizza {
     public double getPris() {
         return pris;
     }
+
+    public int getNummer() {
+        return nummer;
+    }
 }
