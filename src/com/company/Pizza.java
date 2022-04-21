@@ -17,4 +17,8 @@ public class Pizza {
     public String toString() {
         return nummer + ": "+ name+", "+pris+"kr."+"\n"+description+"\n";
     }
+
+    public double getPris() {
+        return pris;
+    }
 }

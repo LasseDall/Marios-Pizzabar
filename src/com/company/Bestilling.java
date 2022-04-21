@@ -14,4 +14,9 @@ public class Bestilling {
     public void tilføj(Pizza pizza){
         bestilling.add(pizza);
     }
+
+    @Override
+    public String toString() {
+        return bestilling +" samlet pris "+pris+"kr\nafhentningstidspunkt: "+afhentning;
+    }
 }

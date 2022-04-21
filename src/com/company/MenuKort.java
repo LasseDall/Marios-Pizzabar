@@ -11,9 +11,9 @@ public MenuKort(){
 public void visMenu(){
     System.out.println(menuKort);
 }
-public Pizza findPizza(int nummer){
+public Pizza findPizza(String pizzaNummer){
     for (int i = 0; i < menuKort.size(); i++) {
-        if (menuKort.indexOf(i)==nummer){
+        if (menuKort.get(i).equals(pizzaNummer)){
             Pizza tmp = menuKort.get(i);
             return tmp;
         }
