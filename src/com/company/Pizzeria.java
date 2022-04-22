@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Pizzeria {
-    private MenuKort menuKort;
+    MenuKort menuKort = new MenuKort();
     private BestillingsListe bestillingsListe;
     UI ui = new UI();
     boolean programKører = true;
