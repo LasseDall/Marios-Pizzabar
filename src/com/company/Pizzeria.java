@@ -24,17 +24,11 @@ public class Pizzeria {
         }
     }
 
-        public void controller() {
-            lavBestilling(1, 0015);
-            //menuKort.visMenu();
-        }
-
         public void lavBestilling(int antalPizzaer, int afhentning) {
-            Scanner keyboard = new Scanner(System.in);
             Bestilling bestilling = new Bestilling(afhentning);
             while (antalPizzaer > 0) {
                 System.out.println("pizza nummer");
-                int pizzaNummer = keyboard.nextInt();
+                int pizzaNummer = sc.nextInt();
                 Pizza tmp = menuKort.findPizza(pizzaNummer);
                 bestilling.tilføj(tmp);
                 antalPizzaer--;
@@ -50,7 +44,13 @@ public class Pizzeria {
     public void valgMainMenu(int valg) {
         switch (valg) {
             case 1 -> ui.visMenukort();
-            case 2 -> controller();
+            case 2 -> {
+                ui.antalPizza();
+                int antalPizzaer = sc.nextInt();
+                ui.afhenting();
+                int afhentningstidspunkt = sc.nextInt();
+                lavBestilling(antalPizzaer, afhentningstidspunkt);
+            }
             case 3 -> oversigt();
             //case 4 -> fjernBestilling();
             case 5 -> programKører = false;

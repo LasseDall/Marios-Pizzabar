@@ -45,5 +45,13 @@ public class UI {
     System.out.printf("61,- \n \n");
   }
 
+  public void antalPizza() {
+    System.out.println("Hvor mange pizzaer indeholder bestillingen?");
+  }
+
+  public void afhenting() {
+    System.out.println("Hvornår skal bestillingen afhentes?");
+  }
+
 
 }
