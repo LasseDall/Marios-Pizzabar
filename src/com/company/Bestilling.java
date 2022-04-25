@@ -37,4 +37,5 @@ public class  Bestilling {
     public int getOrdreNummer() {
         return ordreNummer;
     }
+
 }
