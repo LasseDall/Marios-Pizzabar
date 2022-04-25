@@ -15,7 +15,7 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return nummer + ": "+ name+", "+pris+"kr."+"\n"+description+"\n";
+        return nummer + ": "+ name+", "+pris+" kr.";
     }
 
     public double getPris() {

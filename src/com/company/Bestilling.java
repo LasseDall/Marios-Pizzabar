@@ -19,7 +19,7 @@ public class  Bestilling {
 
     @Override
     public String toString() {
-        return bestilling +" Samlet pris "+ udregnPris() +"kr\nAfhentningstidspunkt kl. "+afhentning+ " Ordernummer "+ordreNummer;
+        return "\n" + bestilling +" Samlet pris: "+ udregnPris() +"kr\nAfhentningstidspunkt kl. "+afhentning+ " Ordernummer "+ordreNummer + '\n';
     }
 
     public int udregnPris() {
