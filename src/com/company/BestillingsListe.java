@@ -8,19 +8,37 @@ public class BestillingsListe {
     public BestillingsListe(){
         bestillinger=new ArrayList<>();
     }
-    public void tilføj(Bestilling bestilling){
-        bestillinger.add(bestilling);
+    public void tilføj(Bestilling bestilling) {
+        boolean bestillingTilføjet = false;
+        if (bestillinger.size() == 0) {
+            bestillinger.add(bestilling);
+        } else {
+            for (int i = 0; i < bestillinger.size(); i++) {
+                if (bestilling.getAfhentning() < bestillinger.get(i).getAfhentning()) {
+                    bestillinger.add(i, bestilling);
+                    i = bestillinger.size();
+                    bestillingTilføjet = true;
+                }
+            }
+            if (!bestillingTilføjet) {
+                bestillinger.add(bestilling);
+            }
+        }
     }
+
     public void print(){
         System.out.println(bestillinger);
     }
     public void fjern(int nummer){
+        boolean bestillingFjernet = false;
         for (int i = 0; i < bestillinger.size(); i++) {
-            if(bestillinger.get(i).getOrdreNummer()==nummer){
+            if (bestillinger.get(i).getOrdreNummer() == nummer) {
                 bestillinger.remove(i);
-            }else{
-                System.out.println("kan ikke finde ordre");
+                bestillingFjernet = true;
             }
+        }
+        if (!bestillingFjernet) {
+        System.out.println("kan ikke finde ordre");
         }
     }
 

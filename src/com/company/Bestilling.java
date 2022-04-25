@@ -30,6 +30,10 @@ public class  Bestilling {
         return samletPris;
     }
 
+    public int getAfhentning() {
+        return afhentning;
+    }
+
     public int getOrdreNummer() {
         return ordreNummer;
     }
