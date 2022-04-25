@@ -23,4 +23,9 @@ public class BestillingsListe {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(bestillinger);
+    }
 }

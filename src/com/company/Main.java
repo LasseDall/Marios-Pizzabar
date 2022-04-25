@@ -9,6 +9,6 @@ public class Main {
 
        // Pizzeria pizzeria = new Pizzeria();
         //pizzeria.controller();
-
+        //TODO tilføj pizzaer, tilføj sortering af bestillinger, tilføj tostring for bestillinger og liste
     }
 }

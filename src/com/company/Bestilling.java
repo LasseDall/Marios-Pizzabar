@@ -19,10 +19,22 @@ public class  Bestilling {
 
     @Override
     public String toString() {
-        return bestilling +" Samlet pris "+pris+"kr\nAfhentningstidspunkt kl. "+afhentning+ " Ordernummer "+ordreNummer;
+        return bestilling +" Samlet pris "+ udregnPris() +"kr\nAfhentningstidspunkt kl. "+afhentning+ " Ordernummer "+ordreNummer;
+    }
+
+    public int udregnPris() {
+        int samletPris = 0;
+        for(int i = 0; i < bestilling.size(); i++) {
+            samletPris += bestilling.get(i).getPris();
+        }
+        return samletPris;
     }
 
     public int getOrdreNummer() {
         return ordreNummer;
+    }
+
+    public ArrayList<Pizza> getBestilling() {
+        return bestilling;
     }
 }
