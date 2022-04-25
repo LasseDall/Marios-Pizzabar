@@ -37,9 +37,7 @@ public class MenuKort {
     menuKort.add(pizza13);
     menuKort.add(pizza14);
 }
-public void visMenu(){
-    System.out.println(menuKort);
-}
+
 public Pizza findPizza(int pizzaNummer){
     for (int i = 0; i < menuKort.size(); i++) {
         if (menuKort.get(i).getNummer() == pizzaNummer){

@@ -13,17 +13,8 @@ public class Pizzeria {
 
     public Pizzeria() {
         bestillingsListe = new BestillingsListe();
-        menuKort = new MenuKort();
     }
 
- /*   public void controller() {
-        while (orderNummer > -1) {
-            orderNummer++;
-            lavBestilling(1, 10, orderNummer);
-            oversigt();
-        }
-    }*/
-        //menuKort.visMenu();
         public void kørProgram () {
             ui.velkommen();
             while (programKører) {

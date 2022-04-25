@@ -37,8 +37,4 @@ public class  Bestilling {
     public int getOrdreNummer() {
         return ordreNummer;
     }
-
-    public ArrayList<Pizza> getBestilling() {
-        return bestilling;
-    }
 }

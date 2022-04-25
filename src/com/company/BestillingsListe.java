@@ -26,9 +26,6 @@ public class BestillingsListe {
         }
     }
 
-    public void print(){
-        System.out.println(bestillinger);
-    }
     public void fjern(int nummer){
         boolean bestillingFjernet = false;
         for (int i = 0; i < bestillinger.size(); i++) {

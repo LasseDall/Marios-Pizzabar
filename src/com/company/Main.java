@@ -6,8 +6,5 @@ public class Main {
 	// write your code here
         Pizzeria pizzeria = new Pizzeria();
         pizzeria.kørProgram();
-
-       // Pizzeria pizzeria = new Pizzeria();
-        //pizzeria.controller();
     }
 }
