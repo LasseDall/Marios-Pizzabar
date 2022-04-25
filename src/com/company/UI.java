@@ -52,6 +52,9 @@ public class UI {
   public void afhenting() {
     System.out.println("Hvornår skal bestillingen afhentes?");
   }
+  public void fjern(){
+    System.out.println("Hvad er odrernummeret på bestillingen der skal fjernes?");
+  }
 
 
 }

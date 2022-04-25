@@ -6,9 +6,11 @@ public class  Bestilling {
     private ArrayList<Pizza> bestilling = new ArrayList<>();
     private int afhentning;
     private double pris;
+    private int ordreNummer;
 
-    public Bestilling(int afhentning){
+    public Bestilling(int afhentning,int ordreNummer){
         this.afhentning=afhentning;
+        this.ordreNummer=ordreNummer;
     }
 
     public void tilføj(Pizza pizza){
@@ -17,6 +19,10 @@ public class  Bestilling {
 
     @Override
     public String toString() {
-        return bestilling +" samlet pris "+pris+"kr\nafhentningstidspunkt: "+afhentning;
+        return bestilling +" Samlet pris "+pris+"kr\nAfhentningstidspunkt kl. "+afhentning+ " Ordernummer "+ordreNummer;
+    }
+
+    public int getOrdreNummer() {
+        return ordreNummer;
     }
 }

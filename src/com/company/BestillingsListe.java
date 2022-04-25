@@ -11,4 +11,16 @@ public class BestillingsListe {
     public void tilføj(Bestilling bestilling){
         bestillinger.add(bestilling);
     }
+    public void print(){
+        System.out.println(bestillinger);
+    }
+    public void fjern(int nummer){
+        for (int i = 0; i < bestillinger.size(); i++) {
+            if(bestillinger.get(i).getOrdreNummer()==nummer){
+                bestillinger.remove(i);
+            }else{
+                System.out.println("kan ikke finde ordre");
+            }
+        }
+    }
 }
